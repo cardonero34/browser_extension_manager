@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d0e14;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.extensions-list-header {
+    padding: 20px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 76%;
+    max-width: 1200px;
+}
+
+.list-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e8eaf2;
+    letter-spacing: -0.02em;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Ocultar los radio inputs */
+.filter-input {
+    display: none;
+}
+
+/* Estilo de los labels que funcionan como botones */
+.filter-label {
+    background: transparent;
+    border: 1.5px solid #3a3f55;
+    color: #9ca3bc;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.filter-label:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: #4a4f65;
+    color: #c0c5d8;
+}
+
+/* Estado activo cuando el radio está checked */
+.filter-input:checked+.filter-label {
+    background: #ff5252;
+    border-color: #ff5252;
+    color: #ffffff;
+    box-shadow: 0 2px 12px rgba(255, 82, 82, 0.4);
+}
+
+.filter-label:active {
+    transform: scale(0.96);
+}

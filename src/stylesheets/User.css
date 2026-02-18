@@ -24,7 +24,8 @@
         0 1px 0 rgba(255,255,255,0.04) inset;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      justify-content: space-between;
+      gap: 20px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -39,7 +40,7 @@
     .card-header {
       display: flex;
       align-items: flex-start;
-      gap: 14px;
+      gap: 20px;
     }
 
     .icon-wrapper {
@@ -73,7 +74,7 @@
     .card-text {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 7px;
       padding-top: 2px;
     }
 

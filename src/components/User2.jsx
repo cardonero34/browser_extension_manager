@@ -8,35 +8,7 @@ export const User2 = () => {
                 {/* Logo y título */}
                 <div className="logo-container">
                     <div className="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#glow)">
-                                {/* Pieza principal del puzzle */}
-                                <path d="M12 8 L12 16 L8 16 L8 20 L12 20 L12 32 L24 32 L24 28 L28 28 L28 24 L24 24 L24 12 L20 12 L20 8 Z"
-                                    fill="url(#gradient1)" stroke="#ff5252" strokeWidth="1.5" />
-
-                                {/* Pieza conectada */}
-                                <path d="M24 12 L32 12 L32 24 L28 24 L28 20 L24 20 Z"
-                                    fill="url(#gradient2)" stroke="#ff6b6b" strokeWidth="1.5" />
-                            </g>
-
-                            <defs>
-                                <linearGradient id="gradient1" x1="12" y1="8" x2="24" y2="32" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0%" stopColor="#ff5252" />
-                                    <stop offset="100%" stopColor="#d32f2f" />
-                                </linearGradient>
-                                <linearGradient id="gradient2" x1="24" y1="12" x2="32" y2="24" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0%" stopColor="#ff6b6b" />
-                                    <stop offset="100%" stopColor="#e84c4c" />
-                                </linearGradient>
-                                <filter id="glow">
-                                    <feGaussianBlur stdDeviation="1" result="coloredBlur" />
-                                    <feMerge>
-                                        <feMergeNode in="coloredBlur" />
-                                        <feMergeNode in="SourceGraphic" />
-                                    </feMerge>
-                                </filter>
-                            </defs>
-                        </svg>
+                        <img className="logo-icon" src="/logo1.png" alt="DevLens Logo" />
                     </div>
                     <h1 className="logo-text">Extensions</h1>
                 </div>
