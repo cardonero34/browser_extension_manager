@@ -9,6 +9,7 @@
 }
 .cont1 {
   width: 80%;
+  padding: 10px 25px 10px 25px;
   display: flex;
   flex-direction: column;
 }
@@ -17,6 +18,7 @@
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
